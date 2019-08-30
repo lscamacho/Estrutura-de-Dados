@@ -31,11 +31,11 @@ int main(){
 	float *v;
 	float proc;
 
-// Leitura do número de valores
+// Leitura do nÃºmero de valores
 	printf("Entre com o numero de valores do vetor:");
 	scanf("%d", &n);
 
-//alocação dinamica
+//alocaÃ§Ã£o dinamica
 	v=(float*) malloc(n*sizeof(float));
 	
 	if (v==NULL){
@@ -70,7 +70,7 @@ int main(){
 	return 0;
 }
  /*
- FUNÇÃO PROCURA INTERATIVA
+ FUNÃ‡ÃƒO PROCURA INTERATIVA
  
  int procura(int n, float k, float *v){
  
