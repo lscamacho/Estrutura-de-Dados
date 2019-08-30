@@ -8,9 +8,9 @@ void bubble_sort (float *vet, int n) {
       
 	  for (i = 0; i < (n - 1); i++) {
    
-   /* Verfica se o vetor est· em ordem, no caso ele coloca em ordem crescente, para decrescente trocar '>' por '<' */
+   /* Verfica se o vetor est√° em ordem, no caso ele coloca em ordem crescente, para decrescente trocar '>' por '<' */
    if (vet[i] > vet[i+1]) {
-     /* Caso n„o esteja, ordena */
+     /* Caso n√£o esteja, ordena */
      aux = vet[i];
      vet[i] = vet[i+1];
      vet[i+1] = aux;
