@@ -24,6 +24,29 @@ Lista *lst_insere(Lista *l, int i)
 	return novo;
 }
 
+Lista *lst_retira(Lista *l, int v)
+{
+	Lista *ant = NULL;
+	Lista *p = l;
+	
+	while (p!=NULL && p->info!=v){
+		ant = p;
+		p=p->prox;
+	}	
+	
+	if (p==NULL)
+	return l;
+	
+	if (ant==NULL)
+	l=p->prox;
+	
+	else
+		ant->prox = p->prox;
+	
+	free(p);
+	return l;
+}
+
 void lst_imprime(Lista *l)
 {
 	Lista *p;
